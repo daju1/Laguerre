@@ -1,0 +1,70 @@
+// Graphs.odl : type library source for Graphs.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (Graphs.tlb).
+
+[ uuid(6FDD0DAF-0482-468A-BC87-2B572E4186BF), version(1.0) ]
+library Graphs
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CGraphsDoc
+	
+	[ uuid(5D31465D-A513-47D2-92B3-6127EBCB046E) ]
+	dispinterface IGraphs
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CGraphsDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CGraphsDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CGraphsDoc
+	
+	[ uuid(E2BDABAE-8E2C-4525-9365-855A26AB6E0E) ]
+	coclass Document
+	{
+		[default] dispinterface IGraphs;
+	};
+
+
+	//  Primary dispatch interface for COutLagFrm
+	
+	[ uuid(0D30EA8A-E113-40F0-AC18-3FDAFF58C57D) ]
+	dispinterface IOutLagFrm
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(COutLagFrm)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(COutLagFrm)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for COutLagFrm
+
+	[ uuid(143FC455-0023-4999-A6B5-51ECC2AC20F9) ]
+	coclass OutLagFrm
+	{
+		[default] dispinterface IOutLagFrm;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};
